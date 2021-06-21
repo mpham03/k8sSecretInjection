@@ -1,0 +1,13 @@
+[packages]
+argparse = "==1.4.0"
+kubernetes = "==17.17.0"
+
+[dev-packages]
+coverage = "*"
+flake8 = "==3.8.4"
+mypy = "==0.800"
+pytest = "*"
+typing-extensions = ">=3.7.4"
+
+[requires]
+python_version = "3.8"
