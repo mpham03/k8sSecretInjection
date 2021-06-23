@@ -70,3 +70,10 @@ a disaster outage.
 - Add support for real Kubernetes cluster config.
 - Add more functional tests for inputs validation and pod configuration changes.
 - How to reduce impact on running services
+
+# Notes after discussion
+Improvements:
+- Mount a default volume to any pod so secret files can be updated without mutating the resource or restarting the service
+- Add a logic to restart the app inside the pod when secret file is updated
+- Update pod labels after execution to avoid re-processing
+- Check K8s annotation's api to validate the resource changes instead of using `loop` to iterate through filtered containers/volumes. 

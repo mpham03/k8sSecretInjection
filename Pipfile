@@ -1,5 +1,5 @@
 [packages]
-argparse = "==1.4.0"
+# argparse = "==1.4.0" it is installed by default with python
 kubernetes = "==17.17.0"
 
 [dev-packages]
